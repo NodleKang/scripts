@@ -1,0 +1,20 @@
+[
+    {
+        "Id": "rds",
+        "MetricStat": {
+            "Metric": {
+                "Namespace": "AWS/RDS",
+                "MetricName": "FreeStorageSpace",
+                "Dimensions": [
+                    {
+                        "Name": "DBInstanceIdentifier",
+                        "Value": "my-db-id"
+                    }
+                ]
+            },
+            "Period": 60,
+            "Stat": "Sum"
+        },
+        "ReturnData": true
+    }
+]
